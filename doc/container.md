@@ -1,9 +1,9 @@
-#容器
+# 容器
 
-##Collections
+## Collections
 
 
-##List、Set、Map
+## List、Set、Map
 **类图**
 ![Collection](pic/container/Collection.png "容器类图 【Thinking in Java】")
 
@@ -18,7 +18,7 @@
 |TreeSet|有序|×|√|√|
 |LinkedHashSet|插入排序、查询快|√|√|×|
 
-###[Map](http://docs.oracle.com/javase/8/docs/api/java/util/Map.html)
+### [Map](http://docs.oracle.com/javase/8/docs/api/java/util/Map.html)
 
 * 存储的key元素必须唯一，需要重载equal方法，确保元素的唯一性
 * 不保证key的顺序。

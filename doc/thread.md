@@ -1,6 +1,6 @@
-#并发
+# 并发
 
-##1. 线程池
+## 1. 线程池
 
 **使用方法**
 ``` java
@@ -24,8 +24,8 @@ public static void main(String[] args) {
 2.便于管理，Executor管理Task，可以决定执行Task的个数，可以控制Task的生命周期。
 3.减少资源消耗，Executor创建的Thread，能够重用（创建新的Thread时，若发现老的Thread可以利用），避免Thread频繁创建。
 
-##2. 资源同步
-###Lock
+## 2. 资源同步
+### Lock
 
 **使用方法**
 ``` java
@@ -76,14 +76,14 @@ public class ThreadLocalHolder {
 ![ThreadLocal](pic/thread/ThreadLocal.png "ThreadLocal")
 
 
-##3. 线程状态
-###状态
+## 3. 线程状态
+### 状态
 1. New:已分配系统资源和初始化，等待CPU分配资源，下一个状态 ->Runnable 或者 ->Blocked
 2. Runnable:运行状态，下一个状态 ->Blocked 或者 ->Dead
 3. Blocked:线程虽然能进入Runnable状态，但是被阻止，需要等待，该状态期间不会做任何操作
 4. Dead:获取不到CPU资源，线程运行完毕或线程被interrupted，会使线程处于Dead状态
 
-###Blocked原因
+### Blocked原因
 1.  睡眠：调用sleep方法
 2.  挂起：调用对象的wait方法，导致线程挂起，直到notify或notifyAll调用后才能运行
 3.  I/O阻塞
